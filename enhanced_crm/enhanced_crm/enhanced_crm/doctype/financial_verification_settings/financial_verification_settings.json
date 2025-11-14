@@ -1,0 +1,52 @@
+{
+  "doctype": "DocType",
+  "name": "Financial Verification Settings",
+  "module": "Enhanced CRM",
+  "custom": 0,
+  "istable": 0,
+  "issingle": 1,
+  "editable_grid": 0,
+  "fields": [
+    {
+      "fieldname": "pan_api_section",
+      "fieldtype": "Section Break",
+      "label": "PAN Verification"
+    },
+    {
+      "fieldname": "pan_api_endpoint",
+      "fieldtype": "Data",
+      "label": "PAN API Endpoint",
+      "reqd": 0
+    },
+    {
+      "fieldname": "pan_api_key",
+      "fieldtype": "Password",
+      "label": "PAN API Key"
+    },
+
+    {
+      "fieldname": "ifsc_api_section",
+      "fieldtype": "Section Break",
+      "label": "IFSC Verification"
+    },
+    {
+      "fieldname": "ifsc_api_endpoint",
+      "fieldtype": "Data",
+      "label": "IFSC API Endpoint"
+    },
+    {
+      "fieldname": "ifsc_api_key",
+      "fieldtype": "Password",
+      "label": "IFSC API Key"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

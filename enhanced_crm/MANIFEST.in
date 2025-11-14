@@ -1,0 +1,5 @@
+graft enhanced_crm
+graft enhanced_crm/enhanced_crm
+graft enhanced_crm/public
+graft enhanced_crm/fixtures
+include requirements.txt

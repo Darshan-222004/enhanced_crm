@@ -1,0 +1,2 @@
+# requests is commonly used for API calls (we'll simulate/mimic usage)
+requests

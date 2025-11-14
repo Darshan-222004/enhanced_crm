@@ -1,0 +1,99 @@
+[
+  {
+    "dt": "Lead",
+    "fieldname": "boid",
+    "fieldtype": "Data",
+    "label": "BOID",
+    "insert_after": "email_id"
+  },
+  {
+    "dt": "Lead",
+    "fieldname": "pan_number",
+    "fieldtype": "Data",
+    "label": "PAN Number",
+    "insert_after": "boid"
+  },
+  {
+    "dt": "Lead",
+    "fieldname": "bank_account_number",
+    "fieldtype": "Data",
+    "label": "Bank Account Number",
+    "insert_after": "pan_number"
+  },
+  {
+    "dt": "Lead",
+    "fieldname": "ifsc_code",
+    "fieldtype": "Data",
+    "label": "IFSC Code",
+    "insert_after": "bank_account_number"
+  },
+  {
+    "dt": "Lead",
+    "fieldname": "verification_log",
+    "fieldtype": "Table",
+    "options": "Verification Log",
+    "label": "Verification Log",
+    "insert_after": "ifsc_code"
+  },
+  {
+    "dt": "Lead",
+    "fieldname": "verify_pan",
+    "fieldtype": "Button",
+    "label": "Verify PAN",
+    "insert_after": "verification_log"
+  },
+
+  {
+    "dt": "Customer",
+    "fieldname": "boid",
+    "fieldtype": "Data",
+    "label": "BOID",
+    "insert_after": "customer_name"
+  },
+  {
+    "dt": "Customer",
+    "fieldname": "pan_number",
+    "fieldtype": "Data",
+    "label": "PAN Number",
+    "insert_after": "boid"
+  },
+  {
+    "dt": "Customer",
+    "fieldname": "bank_account_number",
+    "fieldtype": "Data",
+    "label": "Bank Account Number",
+    "insert_after": "pan_number"
+  },
+  {
+    "dt": "Customer",
+    "fieldname": "ifsc_code",
+    "fieldtype": "Data",
+    "label": "IFSC Code",
+    "insert_after": "bank_account_number"
+  },
+  {
+    "dt": "Customer",
+    "fieldname": "verification_log",
+    "fieldtype": "Table",
+    "options": "Verification Log",
+    "label": "Verification Log",
+    "insert_after": "ifsc_code"
+  },
+
+  {
+    "dt": "Sales Order",
+    "fieldname": "verified_pan_number",
+    "fieldtype": "Data",
+    "label": "Verified PAN Number",
+    "read_only": 1,
+    "insert_after": "customer"
+  },
+  {
+    "dt": "Sales Order",
+    "fieldname": "verified_bank_account_number",
+    "fieldtype": "Data",
+    "label": "Verified Bank Account Number",
+    "read_only": 1,
+    "insert_after": "verified_pan_number"
+  }
+]

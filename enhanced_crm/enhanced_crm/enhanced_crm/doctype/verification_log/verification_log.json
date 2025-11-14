@@ -1,0 +1,38 @@
+{
+  "doctype": "DocType",
+  "name": "Verification Log",
+  "module": "Enhanced CRM",
+  "custom": 0,
+  "istable": 1,
+  "editable_grid": 1,
+  "track_changes": 0,
+  "fields": [
+    {
+      "fieldname": "timestamp",
+      "fieldtype": "Datetime",
+      "label": "Timestamp",
+      "reqd": 1
+    },
+    {
+      "fieldname": "verification_type",
+      "fieldtype": "Select",
+      "label": "Verification Type",
+      "options": "PAN\nIFSC",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Success\nFailed",
+      "reqd": 1
+    },
+    {
+      "fieldname": "api_response",
+      "fieldtype": "Small Text",
+      "label": "API Response",
+      "reqd": 0
+    }
+  ],
+  "permissions": []
+}
